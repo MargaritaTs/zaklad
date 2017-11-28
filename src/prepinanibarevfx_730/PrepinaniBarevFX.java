@@ -55,23 +55,23 @@ public class PrepinaniBarevFX extends Application implements ISubject{
         RadioButton modraRadioB = new RadioButton("modrá");
         modraRadioB.setToggleGroup(group);
         
-        RadioButton cernaRadioB = new RadioButton("černá");
-        cernaRadioB.setToggleGroup(group);
+        //RadioButton cernaRadioB = new RadioButton("černá");
+        //cernaRadioB.setToggleGroup(group);
         
         vbox.getChildren().add(cervenaRadioB);
         vbox.getChildren().add(modraRadioB);
-        vbox.getChildren().add(cernaRadioB);
+       //vbox.getChildren().add(cernaRadioB);
         border.setCenter(vbox);
         
-        cernaRadioB.setOnAction(new EventHandler<ActionEvent>() {
+        //cernaRadioB.setOnAction(new EventHandler<ActionEvent>() {
             
-            @Override
-            public void handle(ActionEvent event) {
-                setStyl("-fx-background-color: black;");
-                setBarva("černá");
-                notifyAllObservers();
-            }
-        });
+          //  @Override
+            //public void handle(ActionEvent event) {
+              //  setStyl("-fx-background-color: black;");
+                //setBarva("černá");
+                //notifyAllObservers();
+            //}
+        //});
         
         cervenaRadioB.setOnAction(new EventHandler<ActionEvent>() {
             
